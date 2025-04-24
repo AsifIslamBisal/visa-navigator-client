@@ -35,7 +35,7 @@ const router = createBrowserRouter([
       {
         path:"/allvisa",
         element:<AllVisa></AllVisa>,
-        loader: () => fetch('http://localhost:5000/addvisa')
+        loader: () => fetch('https://visa-navigator-server-beta-seven.vercel.app/addvisa')
       },
       {
         path:"/addvisa",
@@ -44,7 +44,7 @@ const router = createBrowserRouter([
       {
         path:"/myaddedvisa",
         element:<ProviderRoute><MyAddVisa></MyAddVisa></ProviderRoute>,
-        loader: () => fetch('http://localhost:5000/addvisa')
+        loader: () => fetch('https://visa-navigator-server-beta-seven.vercel.app/addvisa')
         
       },
       {

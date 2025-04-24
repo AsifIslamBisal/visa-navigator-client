@@ -8,7 +8,7 @@ const UpdateVisa = () => {
     const [visa, setVisa] = useState(null);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/visa/${id}`)
+        fetch(`https://visa-navigator-server-beta-seven.vercel.app/visa/${id}`)
             .then(res => res.json())
             .then(data => {
                 setVisa(data);
@@ -37,7 +37,7 @@ const UpdateVisa = () => {
 
         updatedVisa.required_documents = required_documents;
 
-        fetch(`http://localhost:5000/visa/${id}`, {
+        fetch(`https://visa-navigator-server-beta-seven.vercel.app/visa/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

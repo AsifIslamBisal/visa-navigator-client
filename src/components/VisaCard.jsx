@@ -19,7 +19,7 @@ const VisaCard = ({ visa }) => {
         })
         .then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/visa/${visa._id}`, {
+                fetch(`https://visa-navigator-server-beta-seven.vercel.app/visa/${visa._id}`, {
                     method: 'DELETE',
                 })
                 .then(res => res.json())

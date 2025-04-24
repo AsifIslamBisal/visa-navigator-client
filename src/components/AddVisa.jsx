@@ -26,7 +26,7 @@ const AddVisa = () => {
     
       const handleSubmit = async (e) => {
         e.preventDefault();
-        const res = await fetch("http://localhost:5000/addvisa", {
+        const res = await fetch("https://visa-navigator-server-beta-seven.vercel.app/addvisa", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
